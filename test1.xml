@@ -39,7 +39,20 @@
                   <block type="movement_right" id="12"></block>
                 </statement>
                 <next>
-                  <block type="movement_stop" id="13"></block>
+                  <block type="controls_whileUntil" id="64" inline="false">
+                    <field name="MODE">WHILE</field>
+                    <value name="NUMBER">
+                      <block type="math_number" id="71">
+                        <field name="NUM">100000</field>
+                      </block>
+                    </value>
+                    <statement name="DO">
+                      <block type="movement_forward" id="81"></block>
+                    </statement>
+                    <next>
+                      <block type="movement_stop" id="13"></block>
+                    </next>
+                  </block>
                 </next>
               </block>
             </next>
